@@ -1,0 +1,182 @@
+* {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Noto Sans CJK TC", "Microsoft JhengHei", serif;
+    color: rgb(73, 65, 65);
+}
+strong {
+    font-weight: bold;
+}
+
+/* header-menu */
+.menu {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 0 25px 0 black;
+    height: 80px;
+    font-size: 0;
+    width: 100%;
+    z-index: 1;
+}
+.menu img{
+    height: 60px;
+    padding: 20px;
+}
+.menu li {
+    display: inline-block;
+}
+.menu li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(75, 86, 86);
+    padding: 20px;
+}
+.menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 40px;
+}
+
+/* section-hero */
+.hero {
+    margin-top: 80px;
+    height: 700px;
+    background: linear-gradient(rgba(55, 56, 51, 0.8), rgba(41, 40, 46, 0.6)), url(../img/cafe1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero .name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(213, 207, 40);
+    padding: 60px 40px;
+}
+.hero .title-1 {
+    font-size: 75px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.hero .title-2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+.hero .button {
+    display: flex;
+    justify-content: center;
+}
+.hero .button li{
+    display: inline-block;
+    padding: 20px;
+}
+.hero .button .btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid black;
+    background-color: rgba(87, 60, 60, 0.6);
+    border-radius: 40px;
+    padding: 15px;
+}
+.hero .button img {
+    height: 50px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50px;
+    vertical-align: middle;
+}
+.hero .button a:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.hero .arrow {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+.hero .arrow i{
+    color: rgb(213, 207, 40);
+    font-size: 30px;
+}
+
+/* section-intro */
+.intro {
+    font-size: 20px;
+    line-height: 2;
+}
+h1 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(68, 56, 56);
+    padding: 60px 80px 10px;
+}
+h1:hover {
+    text-shadow: rgb(213, 207, 40) 1px 0 10px;
+}
+.wrap {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+}
+.half-width {
+    width: 100%;
+    padding: 20px 120px 50px;
+}
+.p {
+    padding: 0 0 30px;
+}
+.q1 {
+    padding: 15px 20px 15px;
+    border-left: 8px solid rgb(213, 207, 40);
+    background-color: #eee;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.q2 {
+    background-color: #eee;
+    border-radius: 20px;
+    padding: 20px 20px;
+    text-align: center;
+    line-height: 2.5;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.poem::before {
+    content: "“";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    color:rgba(0, 0, 0, 0.5);
+    position: absolute;
+    margin: -40px 0 0 -30px;
+}
+.poem::after {
+    content: "”";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    color:rgba(0, 0, 0, 0.5);
+    position: absolute;
+    margin: -40px 0 0 15px;
+}
+.cite {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0 0;
+}
+
+/* footer-copyright */
+.copyright {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 20px 0;
+    color: rgba(255,255,255,0.8);
+    background-color: rgba(121, 121, 121, 0.6);
+}

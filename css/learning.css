@@ -1,0 +1,130 @@
+/* section-top */
+.top {
+    margin-top: 80px;
+    height: 350px;
+    background: linear-gradient(rgba(55, 56, 51, 0.8), rgba(41, 40, 46, 0.6)), url(../img/learn.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.top .title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 150px;
+}
+
+/* section-learning-plan */
+.learning-plan .wrap {  /*學習計畫的前文*/
+    padding: 0 80px;
+}
+.learning-plan .wrap .item {  /*學習計畫的前文-3欗*/
+    width: 33.333%;
+    padding: 40px;
+}
+.learning-plan .wrap .item p {  /*學習計畫的前文*/
+    line-height: 1.8;
+    text-indent: 2em;
+}
+.learning-plan h2 {  /*5 個月計畫本身的字*/
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 40px;
+}
+.content a {
+    text-decoration: none;
+}
+ol li {  /*數字icon*/
+    counter-increment: step-counter;
+    margin-bottom: 20px;
+    position: relative;
+}
+ol li::before {  /*數字icon*/
+    content: counter(step-counter);
+    font-size: 16px;
+    background-color: rgb(213, 207, 40);
+    color: white;
+    font-weight: 600;
+    padding: 0 9px;
+    border-radius: 3px;
+    position: absolute;
+    left: -40px;
+    top: 2px;
+}
+li h3 {  /*tag標籤樣式*/
+    background-color: #eee;
+    color: rgb(80, 80, 80);
+    display: inline-flex;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+li h3::before,
+li h3::after {
+    content: "\00a0";  /*文字前後空一格*/
+}
+li a span {
+    box-shadow: 0 1px;  /*box-shadow: x軸 y軸*/ /*x軸不動，y軸向下1px*/
+    padding-bottom: 5px;
+    color: rgb(65, 65, 170);
+}
+/* toggle list */
+.months-plan {
+    background-color: #eee;
+}
+.container .wrap {
+    box-sizing: border-box;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contentBx {
+    width: 45%;
+    flex-wrap: wrap;
+}
+.container {
+    box-sizing: border-box;
+    min-height: 60vh;
+    line-height: 1.8;
+}
+.accordion .contentBx {
+    position: relative;
+    margin: 10px 20px;
+}
+.accordion .contentBx .label {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #b58463;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 550;
+    border-radius: 10px;
+}
+.accordion .contentBx .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+.accordion .contentBx.active .label::before {
+    content: '-';
+}
+.accordion .contentBx .content {
+    position: relative;
+    background-color: #fff;
+    height: 0;
+    /* overflow: hidden; */
+    transition: .5s;
+    overflow-y: auto;  /*不懂作用為何?*/
+    border-radius: 10px;
+}
+.accordion .contentBx.active .content {
+    height: auto;
+    padding: 20px 60px 10px;
+}

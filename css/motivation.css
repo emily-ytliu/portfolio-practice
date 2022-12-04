@@ -1,0 +1,115 @@
+/* section-top */
+.top {
+    margin-top: 80px;
+    height: 350px;
+    background: linear-gradient(rgba(55, 56, 51, 0.8), rgba(41, 40, 46, 0.6)), url(../img/sunrise.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+}
+.top .title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 150px;
+}
+
+/* section-timeline */
+.timeline .container {
+    background: linear-gradient(45deg, #f1c93a, #68e0bc);
+    border-radius: 20px;
+    margin: 20px 80px 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+.timeline .wrap {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 40px;
+    width: auto;
+    height: 450px;
+}
+.container li {
+    padding: 0 0 30px 30px;
+    border-left: 1px solid rgb(168, 163, 31);
+    margin-left: 40px;
+    position: relative;
+}
+.container li::before {
+    content: '●';
+    color: rgb(133, 150, 40);
+    font-size: 20px;
+    position: absolute;
+    left: -6px;
+}
+.container h3 {
+    font-weight: bold;
+    line-height: 1.8;
+    font-size: 20px;
+}
+.container .month {
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+/* section-caption */
+.wrap .caption {
+    box-sizing: border-box;
+    padding: 120px 60px 40px 40px;
+}
+.wrap .caption p {
+    line-height: 1.8;
+    text-indent: 2em;
+    padding: 5px 50px 10px 5px;
+}
+
+/* section-motivation */
+.item img {
+    height: 25px;
+    background-color: rgb(213, 207, 40);
+    border-radius: 30%;
+    padding: 10px;
+}
+.wrap {  /*做 4 欗畫面*/
+    width: 100%;
+    margin: auto;
+}
+.motivation .wrap {  /*做 4 欗畫面*/
+    display: flex;
+    justify-content: center;
+}
+.motivation .wrap .item {  /*做 4 欗畫面*/
+    width: 20%;
+    margin: 0 30px;
+    text-align: center;
+    padding: 40px 0 10px;
+}
+.motivation {
+    background-color: #eee;
+}
+.motivation h3 {  /* 4 個原因文字*/
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+p {  /* 4 個原因文字*/
+    line-height: 1.8;
+    text-align: left;
+}
+.motivation .wrap .summary {  /*總結動機*/
+    box-sizing: border-box;
+    width: 50%;
+    padding: 20px 30px 30px;
+    margin: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.motivation .summary h3 {  /*總結動機*/
+    text-align: center;
+}
+
